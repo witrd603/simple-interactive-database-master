@@ -5,12 +5,7 @@
         <meta charset=utf-8>
         <link rel="stylesheet" type="text/css" href="includes.css">
         <style type="text/css">
-        p.error {
-            color:red;
-            font-size:105;
-            font-weight:bold;
-            text-align:center;
-        }
+        p.error { color:red; font-size:105; font-weight:bold; text-align:center;}
           </style>
           </head>
           <body>
@@ -40,7 +35,7 @@
                                    if (empty($POST['email'])) {
                                   $errors[] ='You did not enter your email address.';
                                   }
-                                     else {$ln =trim($_POST['email']);
+                                     else {$e =trim($_POST['email']);
                                      }
                                      //Did the two passwords match?
                                         if (!empty($POST['psword1'])) {
@@ -49,6 +44,8 @@
                                             }
                                                  else {$p =trim($_POST['psword1']);
                                   }
+                                  }
+                                  else {$errors[]= 'You did not enter your password';
                                   }
                                   //Start of the SUCCESFUL SECTION. i.e. all the fields were filled out
                                   if (empty($errors)) {//if no problems encountered, register user in the database
@@ -64,13 +61,12 @@
                                   }
                                   else {// If the form handler or database table contained errors
                                   //Display any error message
-                          echo '<h2>System Error</h2>
-                                  <p class="error">You could not be registred due to a system error. We apologize for any inconvenience.</p>';
+                                  echo '<h2>System Error</h2>
+                                  <p class="error">You could not be registered due to a system error. We apologize for any inconvenience.</p>';
                                   //Debug the message:
                                   echo '<p>' . mysqli_error($dbcon) . '<br><br>Query: ' .$q. '</p>';
-
-                                  }//End of it clause ($result)
-                                  mysqli_error($dbcon); // Close the database connection.
+                                   }//End of if clause ($result)
+                                  mysqli_close($dbcon); // Close the database connection.
                                   //Include the footer and quit the script:
                                   include ('footer.php');
                                   exit();
@@ -111,12 +107,11 @@
                                   
                                      <p> <input id="submit" type= "submit" value= "Register"></p>
                                   </form><!-- End of the page content. -->
-                                  <?php include ('footer.php'); ?></p>
+                                  <?php include ('footer.php'); ?>
                                   </div>
                                   </div>
                               
 
 
           </body>
-    </head>
-</html>
+  </html>

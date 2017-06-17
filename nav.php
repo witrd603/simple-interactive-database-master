@@ -16,6 +16,7 @@ li a:hover { display:block; background: #0a4adf; border: 4px outset #8abaff; wid
 }
 /* onmousedown */
 li a:active { background:#aecbff; border: 4px inset #aecbff;
+}
 </style>
 <div id="nav"><!--This side menu column contains the vertical menu-->
 <ul>

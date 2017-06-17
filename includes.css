@@ -1,11 +1,12 @@
-body {text-align:center; background-color:#D7FFEB; color:navy; font-family: "times new roman"; 
-font-size: 100%; color: navy; margin: auto; 
+body {text-align:center; background-color:#D7FFEB; color:navy;
+font-family: "times new roman";font-size: 100%; color: navy; margin: auto; 
 }
 h2 { font-size:150%; color:navy; text-align:center;
 }
 h3 { font-size:110%; color:navy; text-align:center;
 }
-#container {position:relative; min-width:960px; max-width:1200px; margin:auto; text-align:left;	
+#container {position:relative; min-width:960px; max-width:1200px; margin:auto; 
+text-align:left;	
 }
 #midcol { margin-left:140px; margin-right:140px;
 }
