@@ -12,7 +12,11 @@
 <?php include("info-col.php"); ?>
 <div id="content"><!-- Start of content for home page -->
 <h2>This is the Home Page</h2>
-<p>The home page content. The home page content. The home page content. The home page content. The home page content. <br>The home page content. The home page content. The home page content. The home page content. <br>The home page content. The home page content. <br>The home page content. The home page content. The home page content. </p>
+<p>The home page content. The home page content. The home page content. 
+The home page content. The home page content. <br>The home page content. 
+The home page content. The home page content. The home page content.
+ <br>The home page content. The home page content. <br>The home page content. 
+ The home page content. The home page content. </p>
 </div><!-- End content. -->
 </div>	
 <?php include("footer.php"); ?>
