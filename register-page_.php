@@ -5,7 +5,7 @@
         <meta charset=utf-8>
         <link rel="stylesheet" type="text/css" href="includes.css">
         <style type="text/css">
-        p.error { color:red; font-size:105; font-weight:bold; text-align:center;}
+        p.error { color:red; font-size:105%; font-weight:bold; text-align:center;}
           </style>
           </head>
           <body>
@@ -47,7 +47,7 @@
                                   }
                                   else {$errors[]= 'You did not enter your password';
                                   }
-                                  //Start of the SUCCESFUL SECTION. i.e. all the fields were filled out
+                                  //Start of the SUCCESSFUL SECTION. i.e. all the fields were filled out
                                   if (empty($errors)) {//if no problems encountered, register user in the database
                                   require ('./mysqli_connect.php');//Connect to the database.
                                   //Make the query
